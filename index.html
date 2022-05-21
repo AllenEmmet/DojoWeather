@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>DojoWeather</h1>
+            <div id="cities">
+                <input class="topbutton" type="button" value="Burbank" onclick="aler()">
+                <input class="topbutton" type="button" value="Chicago" onclick="aler()">
+                <input class="topbutton" type="button" value="Dallas" onclick="aler()">
+            </div>
+        </div>
+        <div id="body">
+            <div id="topbar">
+                <h2>San Jose</h2>
+                <div id="sanjose">
+                    <label>Show temperature in </label>
+                    <select onchange="convert(this)">
+                        <option>°F</option>
+                        <option>°C</option>
+                    </select>
+                </div>
+            </div>
+            <div id="main">
+                <div class="day">
+                    <h2>Today</h2>
+                    <img class="weathericon" src="/assets/some_rain.png" alt="rainy">
+                    <h3>Some Rain</h3>
+                    <div class="temp">
+                        <h4 id="t1" class="high degree">75°</h4>
+                        <h4 id="t2" class="low degree">65°</h4>
+                    </div>
+                </div>
+                <div class="day">
+                    <h2>Tomorrow</h2>
+                    <img class="weathericon" src="/assets/some_sun.png" alt="sun">
+                    <h3>Some Sun</h3>
+                    <div class="temp">
+                        <h4 id="t3" class="high degree">80°</h4>
+                        <h4 id="t4" class="low degree">66°</h4>
+                    </div>
+                </div>
+                <div class="day">
+                    <h2>Friday</h2>
+                    <img class="weathericon" src="/assets/some_clouds.png" alt="cloud">
+                    <h3>Some Clouds</h3>
+                    <div class="temp">
+                        <h4 id="t5" class="high degree">69°</h4>
+                        <h4 id="t6" class="low degree" >61°</h4>
+                    </div>
+                </div>
+                <div class="day">
+                    <h2>Saturday</h2>
+                    <img class="weathericon" src="/assets/some_sun.png" alt="sun">
+                    <h3>Some Sun</h3>
+                    <div class="temp">
+                        <h4 id="t7" class="high degree">78°</h4>
+                        <h4 id="t8" class="low degree">70°</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="cookiebar">
+                <div id="cbright">
+                    <img id=cookiepic src="/assets/cookie.png" alt="cookie">
+                </div>
+                <div id="cbmain">
+                  
+                    <h3>Stop! Cookie Time</h3>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="#">Read more...</a></p>
+                </div>
+                <div id="cbleft">
+                    <input type="button" value="I accept" onclick="disappear()">
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
